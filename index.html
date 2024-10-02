@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашняя работа формы</title>
+    <style>
+        .form-Top {
+            width: 20%;
+            height: 40%;
+            margin: 0 auto;
+        }
+
+        .form-Mid {
+            width: 70%;
+            height: 40px;
+            margin: 0 auto;
+        }
+
+        .form-Comments {
+            width: 50%;
+            height: 40px;
+        }
+
+        .form-Foot {
+            width: 70%;
+            height: 30%;
+            margin: 0 auto;
+        }
+
+        .form-Sending {
+            width: 10%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset class="form-Top">
+            <legend> Оставьте ваши контакты </legend>
+            <b> Имя </b> <input type="text" placeholder="Введите свое имя" required> <br> <br>
+            <b> Телефон </b> <input type="text" placeholder="Укажите номер телефона" required> <br> <br>
+            <b> Почта </b> <input type="email" placeholder="Укажите почту" name="mail" required>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <table border="1" class="form-Mid">
+            <tr>
+                <td>
+                    <br>
+                    <br>
+                    <br>
+                    <fieldset class="form-Top">
+                        <b>Введите ФИО:</b> <input type="text" required><br><br>
+                        <b> Введите пароль:</b> <input type="text">
+                    </fieldset>
+                    <br>
+                    <br>
+                    <legend><b>Какой диск вы хотите получить?</b></legend>
+                    <input type="radio" name="Disk" checked>CD<br>
+                    <input type="radio" name="Disk">DVD<br>
+                    <br>
+                    <br>
+                    <legend><b>Какие обучающие курсы вы хотели бы видеть на диске?</b></legend>
+                    <label>
+                        <input type="checkbox" name="course" value="Photoshop" id="Photoshop" checked> Курсы по Фотошопу
+                        <br>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="course" value="Adobe"> Курсы по Adobe Dreamweaver <br>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="course" value="PHP"> Курсы по PHP <br>
+                    </label>
+                    <br>
+                    <br>
+                    <legend><b>Выберите способ даставки:</b></legend>
+                    <select name="" id="">
+                        <option value="Курьером"> Доставка Курьером </option>
+                        <option value="Самовывоз"> Самовывоз </option>
+                    </select>
+                    <br>
+                    <br>
+                    <legend>Введите адрес доставки:</legend>
+                    <textarea class="form-Comments" name="Введите адрес доставкви"
+                        placeholder="Адрес доставки"></textarea>
+                    <br>
+                    <br>
+
+                    <button type="submit"> Сделать заказ </button> &nbsp; &nbsp; &nbsp; &nbsp; <button
+                        type="reset">Отмена</button>
+                    <br>
+                    <br>
+                    <br>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <fieldset class="form-Foot">
+            <legend> <b><i>Контактная информация </i></b> </legend>
+            <b><i> Имя </i></b> <input type="text" required><br><br>
+            <b><i> Телефон </i></b> <input type="text"><br><br>
+            <b> <i> Email </i></b> <input type="email" name="mail" required>
+        </fieldset>
+        <fieldset class="form-Foot">
+            <legend> <b><i> Персональная информация </i></b> </legend>
+            <b><i> Возраст </i></b> <input type="text" required><br><br>
+            <select name="" id="">
+                <option selected disabled> Выберите пол </option>
+                <option value="Женщина"> Женщина </option>
+                <option value="Мужчина"> Мужчина</option>
+                <option value="Неопределившийся"> Неопределившийся </option>
+            </select>
+            <br>
+            <br>
+            <legend><b><i> Перечислите личные качества</i></b> </legend>
+            <textarea name="form-Foot" id="" class="form-Comments"></textarea>
+        </fieldset>
+        <fieldset class="form-Foot">
+            <legend><b><i> Выберите ваших любимых животных </i></b></legend>
+            <label for="">
+                <input type="checkbox" name="Animals" value="Zebra"> Зебра <br>
+            </label>
+            <label for="">
+                <input type="checkbox" name="Animals" value="cat"> Кот <br>
+            </label>
+            <label for="">
+                <input type="checkbox" name="Animals" value="Anaconda"> Анаконда <br>
+            </label>
+            <label for="">
+                <input type="checkbox" name="Animals" value="Elephant"> Слон <br>
+            </label>
+            <label for="">
+                <input type="checkbox" name="Animals" value="Antelope"> Антилопа <br>
+            </label>
+            <label for="">
+                <input type="checkbox" name="Animals" value="pigeon"> Голубь <br>
+            </label>
+            <label for="">
+                <input type="checkbox" name="Animals" value="crab"> Краб <br>
+            </label>
+        </fieldset>
+        <br>
+        <br>
+        <button class="form-Sending" type="submit"> Отправить информацию </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>
