@@ -41,7 +41,7 @@
         <fieldset class="form-Top">
             <legend> Оставьте ваши контакты </legend>
             <b> Имя </b> <input type="text" placeholder="Введите свое имя" required> <br> <br>
-            <b> Телефон </b> <input type="text" placeholder="Укажите номер телефона" required> <br> <br>
+            <b> Телефон </b> <input type="tel" placeholder="Укажите номер телефона" required> <br> <br>
             <b> Почта </b> <input type="email" placeholder="Укажите почту" name="mail" required>
         </fieldset>
         <br>
@@ -59,9 +59,11 @@
                     </fieldset>
                     <br>
                     <br>
-                    <legend><b>Какой диск вы хотите получить?</b></legend>
-                    <input type="radio" name="Disk" checked>CD<br>
-                    <input type="radio" name="Disk">DVD<br>
+                    <fieldset>
+                        <legend><b>Какой диск вы хотите получить?</b></legend>
+                        <input type="radio" name="Disk" checked>CD<br>
+                        <input type="radio" name="Disk">DVD<br>
+                    </fieldset>
                     <br>
                     <br>
                     <legend><b>Какие обучающие курсы вы хотели бы видеть на диске?</b></legend>
